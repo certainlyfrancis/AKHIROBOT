@@ -1,4 +1,5 @@
 const axios = require('axios');
+
 module.exports.config = {
   name: 'nica',
   version: '1.0.0',
@@ -7,21 +8,36 @@ module.exports.config = {
   usage: '[ 𝖯𝗋𝗈𝗆𝗉𝗍 | 𝖰𝗎𝖾𝗋𝗒 ]',
   role: 0
 };
-module.exports.run = async function({
-  api,
-  event,
-  args
-}) {
-  const input = args.join(' ');
+
+module.exports.run = async function({ api, event, args }) {
+  const input = args.join(' ').trim();
+  
   if (!input) {
-    api.sendMessage(`ℹ️ | 𝖯𝗅𝖾𝖺𝗌𝖾 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 𝖺 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇 𝗈𝗋 𝗌𝗍𝖺𝗍𝖾𝗆𝖾𝗇𝗍 𝖺𝖿𝗍𝖾𝗋 𝗇𝗂𝖼𝖺.\n\n𝗘𝗫𝗔𝗠𝗣𝗟𝗘: 𝗇𝗂𝖼𝖺 𝗐𝗁𝖺𝗍 𝗂𝗌 𝗍𝗁𝖾 𝗏𝖺𝗅𝗎𝖾 𝗈𝖿 𝖾𝖽𝗎𝖼𝖺𝗍𝗂𝗈𝗇?`, event.threadID, event.messageID);
+    api.sendMessage(`ℹ️ | Please provide a question or statement after the command.\n\nExample: nica what is the value of education?`, event.threadID, event.messageID);
     return;
   }
-  api.sendMessage(`🔎 | 𝗡𝗶𝗰𝗮 𝗂𝗌 𝗌𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀 𝖿𝗈𝗋 𝗍𝗁𝖾 𝖺𝗇𝗌𝗐𝖾𝗋 𝗈𝖿 "${input}"`, event.threadID, event.messageID);
+  
+  api.sendMessage(`🔎 | Searching for the answer to "${input}"`, event.threadID, event.messageID);
+  
   try {
-    const response = await axios.get(`https://lianeapi.onrender.com/ask/nica?key=j86bwkwo-8hako-12C&prompt=${encodeURIComponent(input)}`);
-    api.sendMessage(response.data.message, event.threadID, event.messageID);
+    const encodedInput = encodeURIComponent(input);
+    const response = await axios.get(`https://lianeapi.onrender.com/ask/nica?key=j86bwkwo-8hako-12C&prompt=${encodedInput}`);
+    
+    if (response.data && response.data.message) {
+      api.sendMessage(response.data.message, event.threadID, event.messageID);
+    } else {
+      throw new Error('Response is empty or missing data');
+    }
   } catch (error) {
-    api.sendMessage('🔴 | 𝖠𝗇 𝖾𝗋𝗋𝗈𝗋 𝗈𝖼𝖼𝗎𝗋𝖾𝖽 𝗐𝗁𝗂𝗅𝖾 𝗉𝗋𝗁𝗈𝖼𝖾𝗌𝗌𝗂𝗇𝗀 𝗒𝗈𝗎𝗋 𝗋𝖾𝗊𝗎𝖾𝗌𝗍, 𝖯𝗅𝖾𝖺𝗌𝖾 𝗍𝗋𝗒 𝖺𝗀𝖺𝗂𝗇 𝗅𝖺𝗍𝖾𝗋.', event.threadID, event.messageID);
+    console.error('Error fetching answer:', error.message);
+    let errorMessage = '🔴 | An error occurred while processing your request.';
+    
+    if (error.response && error.response.status === 404) {
+      errorMessage = '🔴 | No response found for the provided query.';
+    } else if (error.code === 'ECONNABORTED') {
+      errorMessage = '🔴 | The request timed out. Please try again later.';
+    }
+    
+    api.sendMessage(errorMessage, event.threadID, event.messageID);
   }
 };
