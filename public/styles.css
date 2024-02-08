@@ -1,6 +1,6 @@
 body {
     padding: 20px;
-    background-color: #f605fa;
+    background-color: #87CEEB;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,8 +15,8 @@ body {
 
 .gradient-mix {
     background-image: linear-gradient(to right,
-        #66CCCC
-        #0099CC
+        #66CCCC;
+        #0099CC;
     );
     width: 100%;
     height: 100px; /* Adjust the height as needed */
