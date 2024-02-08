@@ -1,15 +1,44 @@
 body {
      padding: 20px;
-     background-color: #f8f9fa;
+     background-color: #f605fa;
      font-family: 'Poppins', sans-serif;
 }
  .container {
-     background-color: #ffffff;
+     background-color: #ff0000;
      border-radius: 10px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      padding: 20px;
      margin-top: 20px;
      margin-bottom: 20px;
+
+     background-color: #FFA500;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+
+     background-color: #ffff00;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+
+     background-color: #dc143c;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+
+     background-color: #ff4500;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+
 }
  h1 {
      color: #343a40;
@@ -119,4 +148,3 @@ body {
 #listOfCommands:not(.modal), #listOfCommandsEvent:not(.modal), #prefixOfCommands:not(.modal), #adminOfCommands:not(.modal) {
   box-shadow: none !important;
 }
-
