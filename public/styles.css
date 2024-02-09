@@ -1,9 +1,13 @@
 body {
   background-image: url('https://i.imgur.com/AoZ18jU.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-  background-size: 1170px 2532px; /* Estimated size based on iPhone 13 Pro dimensions */
+  background-size: cover; /* Cover the entire background */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the background image */
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the body fills the viewport height */
 }
 
 .container {
