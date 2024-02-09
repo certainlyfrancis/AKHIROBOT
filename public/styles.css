@@ -17,10 +17,12 @@ body {
 
   align-items: flex;
 
-  height: 400vh; 
+  height: 100vh;
+
+  background-attachment: fixed;
 }
 .container {
-     background-color: #d4f4ef; /* Aqua background color */
+     background-color: #e6f7ff; /* Sky blue background */
      border-radius: 10px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      padding: 20px;
@@ -28,10 +30,10 @@ body {
      margin-bottom: 20px;
 }
 h1 {
-     color: #0d686d; /* Dark aqua for headings */
+     color: #3c88c5; /* Dark sky blue for headings */
 }
 label {
-     color: #266b8e; /* Aqua for labels */
+     color: #4ba7e0; /* Light sky blue for labels */
 }
 .centered-textarea {
      display: block;
@@ -40,28 +42,28 @@ label {
      min-height: 150px;
      padding: 10px;
      box-sizing: border-box;
-     border: 1px solid #68c7c0; /* Aqua border color */
+     border: 1px solid #87c9ff; /* Light sky blue border */
      border-radius: 5px;
      resize: none;
 }
 .btn-primary {
-     background-color: #1eaab2; /* Aqua primary button background */
-     border: 1px solid #1eaab2; /* Aqua primary button border */
+     background-color: #70b3ff; /* Sky blue primary button background */
+     border: 1px solid #70b3ff; /* Sky blue primary button border */
 }
 .btn-primary:hover {
-     background-color: #0d8a93; /* Darker aqua on hover */
-     border: 1px solid #0d8a93; /* Darker aqua border on hover */
+     background-color: #508fc7; /* Darker sky blue on hover */
+     border: 1px solid #508fc7; /* Darker sky blue border on hover */
 }
 .success-message {
-     color: #0a9c44; /* Success message color */
+     color: #009900; /* Success message color */
      margin-top: 10px;
 }
 .footer {
-     background-color: rgba(212, 244, 239, 0.7); /* Aqua footer background with opacity */
+     background-color: rgba(230, 247, 255, 0.7); /* Sky blue footer background with opacity */
      padding: 10px;
      text-align: center;
      font-size: 16px;
-     color: #266b8e; /* Aqua footer text color */
+     color: #4ba7e0; /* Sky blue footer text color */
      margin-top: 50px;
      border-top: 1px solid #ccc;
      position: fixed;
@@ -96,17 +98,17 @@ label {
   margin-top: 10px;
   padding: 14px;
   align-items: center;
-  border: 1px solid #68c7c0; /* Aqua form check border */
+  border: 1px solid #87c9ff; /* Light sky blue form check border */
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease; 
-  border-color: #68c7c0; /* Aqua border color */
-  background-color: #d4f4ef; /* Aqua background color */
+  border-color: #87c9ff; /* Light sky blue border */
+  background-color: #e6f7ff; /* Sky blue background */
 }
 
 .form-check:hover {
-  background-color: #a3e5e0; /* Lighter aqua on hover */
-  border-color: #266b8e; /* Dark aqua border on hover */
+  background-color: #bddfff; /* Lighter sky blue on hover */
+  border-color: #4ba7e0; /* Dark sky blue border on hover */
 }
 
 .form-check-input {
@@ -121,12 +123,12 @@ label {
 #inputOfPrefix, #inputOfAdmin {
   padding: 13px;
   width: 200px;
-  border: 1px solid #68c7c0; /* Aqua border color */
+  border: 1px solid #87c9ff; /* Light sky blue border */
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease; 
-  border-color: #68c7c0; /* Aqua border color */
-  background-color: #d4f4ef; /* Aqua background color */
+  border-color: #87c9ff; /* Light sky blue border */
+  background-color: #e6f7ff; /* Sky blue background */
 }
 #listOfCommands, #listOfCommandsEvent, #prefixOfCommands, #adminOfCommands {
   border: none !important;
