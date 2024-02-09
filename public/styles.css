@@ -6,7 +6,7 @@
      font-family: 'Poppins', sans-serif;
 }
  .container {
-     width: 300px; /* Set your desired width */
+     width: 100px; /* Set your desired width */
      height: 1000px; /* Set your desired height */
      background: linear-gradient(135deg, #00bcd4, #4db6ac); /* Aqua gradient mix */
      border-radius: 10px; /* Add border radius for rounded corners */
