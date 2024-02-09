@@ -19,50 +19,49 @@ body {
 
   height: 100vh; 
 }
-
- .container {
-     background-color: #ffffff;
+.container {
+     background-color: #d4f4ef; /* Aqua background color */
      border-radius: 10px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      padding: 20px;
      margin-top: 20px;
      margin-bottom: 20px;
 }
- h1 {
-     color: #343a40;
+h1 {
+     color: #0d686d; /* Dark aqua for headings */
 }
- label {
-     color: #495057;
+label {
+     color: #266b8e; /* Aqua for labels */
 }
- .centered-textarea {
+.centered-textarea {
      display: block;
      margin: 0 auto;
      width: 100%;
      min-height: 150px;
      padding: 10px;
      box-sizing: border-box;
-     border: 1px solid #ced4da;
+     border: 1px solid #68c7c0; /* Aqua border color */
      border-radius: 5px;
      resize: none;
 }
- .btn-primary {
-     background-color: #007bff;
-     border: 1px solid #007bff;
+.btn-primary {
+     background-color: #1eaab2; /* Aqua primary button background */
+     border: 1px solid #1eaab2; /* Aqua primary button border */
 }
- .btn-primary:hover {
-     background-color: #0056b3;
-     border: 1px solid #0056b3;
+.btn-primary:hover {
+     background-color: #0d8a93; /* Darker aqua on hover */
+     border: 1px solid #0d8a93; /* Darker aqua border on hover */
 }
- .success-message {
-     color: green;
+.success-message {
+     color: #0a9c44; /* Success message color */
      margin-top: 10px;
 }
- .footer {
-     background-color: rgba(255, 255, 255, 0.7);
+.footer {
+     background-color: rgba(212, 244, 239, 0.7); /* Aqua footer background with opacity */
      padding: 10px;
      text-align: center;
      font-size: 16px;
-     color: #555;
+     color: #266b8e; /* Aqua footer text color */
      margin-top: 50px;
      border-top: 1px solid #ccc;
      position: fixed;
@@ -70,25 +69,25 @@ body {
      left: 0;
      width: 100%;
 }
- .footer p {
+.footer p {
      margin: 0;
      display: inline-block;
      margin-right: 30px;
 }
- .container-buttons {
+.container-buttons {
      margin-top: 20px;
      text-align: center;
 }
- .container-buttons .btn {
+.container-buttons .btn {
      margin: 5px;
 }
 
- #result {
+#result {
      padding: 10px;
      margin-top: 20px;
      border-radius: 5px;
 }
- .center-placeholder::placeholder {
+.center-placeholder::placeholder {
      text-align: center;
 }
 
@@ -97,17 +96,17 @@ body {
   margin-top: 10px;
   padding: 14px;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #68c7c0; /* Aqua form check border */
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease; 
-  border-color: #ccc;
-  background-color: #fff;
+  border-color: #68c7c0; /* Aqua border color */
+  background-color: #d4f4ef; /* Aqua background color */
 }
 
 .form-check:hover {
-  background-color: #f0f0f0; 
-  border-color: #333; 
+  background-color: #a3e5e0; /* Lighter aqua on hover */
+  border-color: #266b8e; /* Dark aqua border on hover */
 }
 
 .form-check-input {
@@ -122,12 +121,12 @@ body {
 #inputOfPrefix, #inputOfAdmin {
   padding: 13px;
   width: 200px;
-  border: 1px solid #ccc;
+  border: 1px solid #68c7c0; /* Aqua border color */
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease; 
-  border-color: #ccc;
-  background-color: #fff;
+  border-color: #68c7c0; /* Aqua border color */
+  background-color: #d4f4ef; /* Aqua background color */
 }
 #listOfCommands, #listOfCommandsEvent, #prefixOfCommands, #adminOfCommands {
   border: none !important;
