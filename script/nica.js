@@ -19,7 +19,7 @@ module.exports.run = async ({ api, event, args }) => {
   api.sendMessage(`🔎 | 𝗡𝗜𝗖𝗔 𝗂𝗌 𝖺𝗇𝗌𝗐𝖾𝗋𝗂𝗇𝗀 𝗍𝗈 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇.\n\n${query}`, event.threadID, () => null, event.messageID);
   
   try { 
-    const response = await axios.get(`https://lianeapi.onrender.com/ask/nica?key=j86bwkwo-8hako-12C&query=${query}`);
+    const response = await axios.get(`https://lianeapi.onrender.com/ask/nica?key=j86bwkwo-8hako-12C&query=${encodeURIComponent(query)`);
     api.setMessageReaction("✅", event.messageID, (err) => {}, true); 
     api.sendMessage(response.data.message, event.threadID, () => null, event.messageID); 
   } 
