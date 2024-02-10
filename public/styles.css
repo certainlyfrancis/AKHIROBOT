@@ -30,10 +30,10 @@ body {
      margin-bottom: 20px;
 }
 h1 {
-     color: #ffffff; /* White text color */
+     color: #000000; /* Black text color */
 }
 label {
-     color: #ffffff; /* White text color */
+     color: #000000; /* Black text color */
 }
 .centered-textarea {
      display: block;
