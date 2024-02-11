@@ -5,9 +5,9 @@ const KievRPSSecAuth = "FACSBBRaTOJILtFsMkpLVWSG6AN6C/svRwNmAAAEgAAACGtoWFdkFVMt
 const _U = "1N6XdZoEjrs9bNG3W07jM2krHSUQ0vYNaIAvNGbFVnz7xSZZSDfDUTqYW3g7IEKvGoxieQVFUmX8xBnN5O10gBbCENlfZiY5GPbPlyAwaPUM7lRzYXm3sFtxoQjyZEVcBCwgT-pLt9L8_hVtK2L_CQzjIdgfLIPKhWZymDiBa356Y31UQ_0A1wXZTpVXrN2tMct54TIh3q6Lvf-Y8ucNDI6M3NVjK46oOOi4bZEX43sI";
 
 module.exports.config = {
-	name: 'dalle',
+  name: 'dalle',
   version: '2.0.0',
-  credits: 'cliff'//api by samir
+  credits: 'cliff',//api by samir
   aliases: ['gen'],
   description: '𝗗𝗔𝗟𝗟𝗘 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗆𝖺𝖽𝖾 𝖻𝗒 𝖢𝗅𝗂𝖿𝖿 𝖵𝗂𝗇𝖼𝖾𝗇𝗍 𝖳𝗈𝗋𝗋𝖾𝗏𝗂𝗅𝗅𝖺𝗌 𝗂𝗌 𝗎𝗌𝖾 𝗍𝗈 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾 𝖺𝗂 𝗉𝗂𝖼𝗍𝗎𝗋𝖾𝗌 𝗎𝗌𝗂𝗇𝗀 𝗍𝖾𝗑𝗍',
   role: 0
